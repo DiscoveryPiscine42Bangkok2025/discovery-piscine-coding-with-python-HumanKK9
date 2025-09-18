@@ -3,7 +3,7 @@ if len(sys.argv)!=3:
     print("none")
 else:
     arr=[]
-    if sys.argv[1] > sys.argv[2]:
+    if int(sys.argv[1]) > int(sys.argv[2]):
         b=int(sys.argv[1])
         a=int(sys.argv[2])
     else:
@@ -11,4 +11,5 @@ else:
         b=int(sys.argv[2])
     for x in range(a,b+1):
         arr.append(x)
+
     print(arr)
